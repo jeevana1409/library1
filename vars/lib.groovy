@@ -1,6 +1,7 @@
 def gitDownload(repo)
 {
-  git "https://github.com/jeevana1409/${repo}.git"
+  git branch: 'main', url: 'https://github.com/jeevana1409/${repo}.git'
+
 }
 def build()
 {
