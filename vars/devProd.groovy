@@ -28,6 +28,13 @@ docker tag ${imageName}:${env.BUILD_NUMBER} ${imageName}:latest
 """
     }
 }   
+def dockerPush(imageName)
+{
+  sh """
+docker push ${imageName}:${env.BUILD_NUMBER}
+docker push ${imageName}:latest
+"""
+}
   
     
 
