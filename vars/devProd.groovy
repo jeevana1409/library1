@@ -12,7 +12,7 @@ def build()
     sh 'mvn package'
   }
 }
-def dockercontext()
+def dockercontext(String imageName)
 {
   stage('build Docker Image')
   {
