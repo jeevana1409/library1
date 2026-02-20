@@ -27,7 +27,7 @@ docker build -t ${imageName}:${env.BUILD_NUMBER} .
 docker tag ${imageName}:${env.BUILD_NUMBER} ${imageName}:latest
 """
     }
-    
+}   
   
     
 
